@@ -1,0 +1,33 @@
+mode: train
+train_continue: off
+
+scope: classifier
+dir_checkpoint: ./checkpoints
+dir_log: ./log
+
+dir_data: ../datasets
+dir_result: ./results
+
+model_name: 'VGG16'
+num_epoch: 1
+batch_size: 256
+lr: 0.0001
+
+ny_in: 32
+nx_in: 32
+nch_in: 1
+
+ny_load: 32
+nx_load: 32
+nch_load: 1
+
+ny_out: 1
+nx_out: 1
+nch_out: 10
+
+nch_ker: 32
+data_type: float32
+
+num_freq_disp: 20
+num_freq_save: 1
+name_data: mnist
